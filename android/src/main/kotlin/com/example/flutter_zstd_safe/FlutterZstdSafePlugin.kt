@@ -28,6 +28,7 @@ class FlutterZstdSafePlugin :
     }
 
     external fun compress(input: ByteArray): ByteArray?
+    external fun decompress(input: ByteArray): ByteArray?
 
     override fun onMethodCall(
         call: MethodCall,
@@ -36,6 +37,9 @@ class FlutterZstdSafePlugin :
         if (call.method == "compress") {
             val data = call.arguments as ByteArray
             result.success(compress(data))
+        } else if (call.method == "decompress") {
+            val data = call.arguments as ByteArray
+            result.success(decompress(data))
         } else {
             result.notImplemented()
         }

@@ -1,3 +1,9 @@
+## 1.0.3
+
+* Implemented `ZstdCodec`, `ZstdEncoder`, and `ZstdDecoder`.
+* Added `FlutterZstdSafe.decompress` method.
+* Added native decompression support.
+
 ## 1.0.2
 
 * Fixed repository link in `pubspec.yaml`.

@@ -1,6 +1,6 @@
 name: flutter_zstd_safe
 description: Zstandard compression plugin built with NDK r26 and 16 KB page support
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/raghibmohd01/flutter_zstd_safe
 repository: https://github.com/raghibmohd01/flutter_zstd_safe
 
