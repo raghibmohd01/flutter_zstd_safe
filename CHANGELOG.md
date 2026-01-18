@@ -1,3 +1,9 @@
+## 1.1.0
+
+* Upgraded NDK to r28 for official 16 KB page support.
+* Added explicit linker flags to ensure 16 KB segment alignment (`-Wl,-z,max-page-size=16384`).
+* Verified 16 KB alignment using `objdump`.
+
 ## 1.0.3
 
 * Implemented `ZstdCodec`, `ZstdEncoder`, and `ZstdDecoder`.

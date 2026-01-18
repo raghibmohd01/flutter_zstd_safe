@@ -25,7 +25,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    ndkVersion "26.3.11579264"
+    ndkVersion "28.2.13676358"
     namespace = "com.example.flutter_zstd_safe"
 
     compileSdk = 36
@@ -54,7 +54,7 @@ android {
         minSdk = 24
         externalNativeBuild {
             cmake {
-                arguments "-DANDROID_PAGE_SIZE=16384"
+                arguments "-DANDROID_ALIGNED_16K=ON", "-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-z,common-page-size=16384 -Wl,-z,max-page-size=16384"
             }
         }
         ndk {
