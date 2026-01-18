@@ -1,0 +1,3 @@
+[submodule "android/src/main/cpp/zstd"]
+	path = android/src/main/cpp/zstd
+	url = https://github.com/facebook/zstd.git
